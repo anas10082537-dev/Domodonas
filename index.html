@@ -1,4 +1,4 @@
-ting{variant=“document” id=“42681”}
+ment” id=“58142”}
 
 <!DOCTYPE html>
 <html lang="th">
@@ -8,44 +8,80 @@ ting{variant=“document” id=“42681”}
 <title>Domodonas</title>
 <style>
 body{
-background:#0f0f0f;
-color:white;
-font-family:Arial,sans-serif;
-text-align:center;
-margin:0;
-padding:30px;
+    background:#111;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:20px;
 }
 h1{
-color:#b57aff;
-font-size:42px;
+    text-align:center;
 }
-p{
-color:#aaa;
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:30px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:20px;
 }
 .card{
-display:block;
-max-width:500px;
-margin:15px auto;
-padding:20px;
-background:#181818;
-border-radius:15px;
-color:white;
-text-decoration:none;
-border:1px solid #333;
+    background:#1c1c1c;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(255,255,255,.1);
 }
-.card:hover{
-border-color:#b57aff;
+.card img{
+    width:100%;
+    display:block;
+}
+.card-content{
+    padding:15px;
+}
+.btn{
+    display:inline-block;
+    padding:10px 15px;
+    margin:5px 5px 0 0;
+    background:#333;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+}
+.btn:hover{
+    background:#555;
 }
 </style>
 </head>
 <body>
 <h1>DOMODONAS</h1>
-<p>Photo & Video Collection</p>
-<a class="card" href="sets/set001.html">
-📷 SET 001
+<p class="subtitle">Photo & Video Collection</p>
+<div class="grid">
+<div class="card">
+<img src="covers/set001.jpg">
+<div class="card-content">
+<h2>SET 001</h2>
+<p>248 Photos</p>
+<a class="btn" href="sets/set001.html">
+📷 View Gallery
 </a>
-<a class="card" href="sets/set002.html">
-📷 SET 002
+<a class="btn" href="zip/set001.zip">
+📦 Download ZIP
 </a>
-<a class="card" href="sets/video001.html">
-🎥
+</div>
+</div>
+<div class="card">
+<img src="covers/set002.jpg">
+<div class="card-content">
+<h2>SET 002</h2>
+<p>312 Photos</p>
+<a class="btn" href="sets/set002.html">
+📷 View Gallery
+</a>
+<a class="btn" href="zip/set002.zip">
+📦 Download ZIP
+</a>
+</div>
+</div>
+</div>
